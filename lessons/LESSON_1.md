@@ -49,7 +49,7 @@ commit;
 ```
 ``` sql
 /* session B */
-select* from persons; --не видно новой записи, потому что session A и session B не закоммитили изменения
+select* from persons; --не видно новой записи, потому что session B не закоммитила изменения
 commit;
 select* from persons; --теперь видно новую запись
 ```
